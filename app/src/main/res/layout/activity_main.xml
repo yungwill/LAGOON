@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="400dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/osaka_re"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="#494949"
+        android:textSize="90sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/control"
+        android:layout_width="140dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_corners"
+        android:backgroundTint="#757575"
+        android:onClick="goto_controls"
+        android:text="@string/controls"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <Button
+        android:id="@+id/data"
+        android:layout_width="140dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/round_corners"
+        android:backgroundTint="#757575"
+        android:onClick="goto_data"
+        android:text="@string/data"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/control" />
+
+    <Button
+        android:id="@+id/graph"
+        android:layout_width="140dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/round_corners"
+        android:backgroundTint="#757575"
+        android:onClick="goto_graph"
+        android:text="@string/graph"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/data" />
+
+    <Button
+        android:id="@+id/image"
+        android:layout_width="140dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/round_corners"
+        android:backgroundTint="#757575"
+        android:onClick="goto_image"
+        android:text="@string/images"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graph"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="207dp"
+        android:layout_height="511dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.501"
+        app:srcCompat="@drawable/bubbles" />
+
+    <ImageView
+        android:id="@+id/plant_view"
+        android:layout_width="600dp"
+        android:layout_height="900dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/plant" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

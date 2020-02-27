@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">LAGOON</string>
+    <string name="lagoon">LAGOON</string>
+    <string name="controls">Controls</string>
+    <string name="data">Data</string>
+    <string name="graph">Graph</string>
+    <string name="images">Images</string>
+    <string name="camera">Camera</string>
+    <string name="lights">Lights</string>
+    <string name="pump">Pump</string>
+    <string name="fan">Fan</string>
+    <string name="temperature">Temperature</string>
+    <string name="humidity">Humidity</string>
+    <string name="ph">PH</string>
+    <string name="water_level">Water Level</string>
+    <string name="choose_file">Choose File</string>
+    <string name="upload">Upload</string>
+    <string name="system_view">System View</string>
+    <string name="view_uploads">View Uploads</string>
+    <string name="todo">TODO</string>
+
+    <string-array name="Date_Set">
+        <item>Today</item>
+        <item>Yesterday</item>
+        <item>Last Month</item>
+        <item>Last Year</item>
+    </string-array>
+</resources>
