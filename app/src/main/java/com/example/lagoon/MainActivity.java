@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    // Takes user to image page
+    // Takes user to view image page
     public void goto_image(View view) {
         Intent intent = new Intent(this, ViewImgActivity.class);
         startActivity(intent);
