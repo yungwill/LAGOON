@@ -3,6 +3,7 @@ package com.example.lagoon;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
@@ -22,6 +23,7 @@ public class DataActivity extends AppCompatActivity {
     DatabaseReference databaseRef = database.getReference("Update");
 
     TextView temp, hum, ph, wl;
+    String temperature, humidity, p_h, water_lvl, wl_set;
 
     public static final String TAG = "D";
 
@@ -44,16 +46,22 @@ public class DataActivity extends AppCompatActivity {
             // in the TextView so that the user can see then
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot){
-                String temperature = dataSnapshot.child("Temp").getValue().toString();
-                String humidity = dataSnapshot.child("Hum").getValue().toString();
-                String p_h = dataSnapshot.child("PH").getValue().toString();
-                String water_lvl = dataSnapshot.child("WL").getValue().toString();
+                temperature = dataSnapshot.child("Temp").getValue().toString();
+                humidity = dataSnapshot.child("Hum").getValue().toString();
+                p_h = dataSnapshot.child("PH").getValue().toString();
+                water_lvl = dataSnapshot.child("WL").getValue().toString();
 
+                Log.d("WATERLVL", water_lvl);
+                // Checks if value is 0 and if it is display text and color green on app screen
+                boolean water_check = water_lvl.equals("0");
+                setwl(water_check);
+                Log.d("WATERLVL", "check");
+                // Sets the text for app screen
                 temp.setText(temperature + "°F");
                 hum.setText(humidity + " RH");
                 ph.setText(p_h);
-                wl.setText(water_lvl);
             }
+
             // If the action is cancelled then it is logged
             @Override
             public void onCancelled(DatabaseError dError){
@@ -61,4 +69,20 @@ public class DataActivity extends AppCompatActivity {
             }
         });
     }
+
+    // Check if water level is 0 or 1 and prints green or red depending on which
+    void setwl(boolean check){
+        if(check == true){
+            Log.d("WATERLVL", "green");
+            wl.setTextColor(Color.GREEN);
+            wl.setText("Green");
+
+        }
+        else{
+            wl.setTextColor(Color.RED);
+            wl.setText("Red");
+        }
+    }
 }
+
+

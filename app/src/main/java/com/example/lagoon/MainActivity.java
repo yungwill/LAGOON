@@ -14,23 +14,28 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     // Function that when called will take the user to another page
+
+    // Takes user to controls page
     public void goto_controls(View view){
         Intent intent = new Intent(this, ControlActivity.class);
         startActivity(intent);
     }
 
+    // Takes user to data page
     public void goto_data(View view) {
         Intent intent = new Intent(this, DataActivity.class);
         startActivity(intent);
     }
 
+    // Takes user to graphs page
     public void goto_graph(View view) {
         Intent intent = new Intent(this, GraphActivity.class);
         startActivity(intent);
     }
 
+    // Takes user to image page
     public void goto_image(View view) {
-        Intent intent = new Intent(this, ImageActivity.class);
+        Intent intent = new Intent(this, ViewImgActivity.class);
         startActivity(intent);
     }
 }
