@@ -46,6 +46,7 @@ public class GraphActivity extends AppCompatActivity {
         ArrayAdapter<String> dateAdapter = new ArrayAdapter<String>(GraphActivity.this,
                 android.R.layout.simple_list_item_1,
                 getResources().getStringArray(R.array.Date_Set));
+
         dateAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         date_spin.setAdapter(dateAdapter);
 

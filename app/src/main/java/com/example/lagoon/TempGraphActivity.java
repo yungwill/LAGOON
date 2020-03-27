@@ -42,7 +42,7 @@ public class TempGraphActivity extends AppCompatActivity {
 
     //final DateFormat timeF = new SimpleDateFormat("mm:ss");
     //final DateFormat dateF = new SimpleDateFormat("MMM:dd:yy");
-    int count_t = 0;
+    //int count_t = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -118,7 +118,7 @@ public class TempGraphActivity extends AppCompatActivity {
 
                 for(DataSnapshot tempSnap : dataSnapshot.getChildren()){
                     String tempV = tempSnap.getValue().toString();
-                    System.out.println("c: " + count_all);
+                    //System.out.println("c: " + count_all);
                     if (count < count_all && count == Integer.parseInt(counter_list.get(counter))) {
 
                             if(setT == 0) {

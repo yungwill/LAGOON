@@ -17,7 +17,6 @@
         <activity android:name=".PhGraphActivity" />
         <activity android:name=".TempGraphActivity" />
         <activity android:name=".ViewImgActivity" />
-        <activity android:name=".ImageActivity" />
         <activity android:name=".GraphActivity" />
         <activity android:name=".DataActivity" />
         <activity android:name=".ControlActivity" />

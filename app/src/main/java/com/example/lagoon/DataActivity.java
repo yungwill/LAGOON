@@ -57,7 +57,7 @@ public class DataActivity extends AppCompatActivity {
                 setwl(water_check);
                 Log.d("WATERLVL", "check");
                 // Sets the text for app screen
-                temp.setText(temperature + "°F");
+                temp.setText(temperature + "°C");
                 hum.setText(humidity + " RH");
                 ph.setText(p_h);
             }
