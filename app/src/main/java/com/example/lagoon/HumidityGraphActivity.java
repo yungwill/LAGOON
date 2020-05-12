@@ -109,11 +109,10 @@ public class HumidityGraphActivity extends AppCompatActivity {
 
                         else if(setT == 1) {
                             //Date tempT = dateF.parse(time_list.get(counter));
-                            String mon_t = (time_list.get(counter).split("/")[0]);
-                            String day_t = (time_list.get(counter).split("/")[1]);
-                            String yr_t = (time_list.get(counter).split("/")[2]);
-                            int date_t = Integer.parseInt(mon_t + day_t + yr_t);
-                            dp[counter] = new DataPoint(date_t, Integer.parseInt(humidV));
+                            String hour_t = (time_list.get(counter).split(":")[0]);
+                            String min_t = (time_list.get(counter).split(":")[1]);
+                            int time_t = (60*Integer.parseInt(hour_t)) + (Integer.parseInt(min_t));
+                            dp[counter] = new DataPoint(time_t, Double.parseDouble(humidV));
                         }
                         if(counter < count_dis-1) counter++;
                     }

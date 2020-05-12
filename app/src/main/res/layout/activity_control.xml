@@ -22,57 +22,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Switch
-        android:id="@+id/cam_switch"
-        android:layout_width="190dp"
-        android:layout_height="85dp"
-        android:layout_marginTop="60dp"
-        android:text="@string/camera"
-        android:textSize="30sp"
-        android:fontFamily="@font/cross"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Title" />
-
-    <Switch
-        android:id="@+id/light_switch"
-        android:layout_width="190dp"
-        android:layout_height="85dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/lights"
-        android:textSize="30sp"
-        android:fontFamily="@font/cross"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cam_switch" />
-
-    <Switch
         android:id="@+id/pump_switch"
         android:layout_width="190dp"
         android:layout_height="85dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/cross"
         android:text="@string/pump"
         android:textSize="30sp"
-        android:fontFamily="@font/cross"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/light_switch" />
-
-    <Switch
-        android:id="@+id/fan_switch"
-        android:layout_width="190dp"
-        android:layout_height="85dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/fan"
-        android:textSize="30sp"
-        android:fontFamily="@font/cross"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pump_switch"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
